@@ -1,0 +1,22 @@
+1.
+prod = 1; nvals=0;
+
+%Read the first number.
+x = input('Enter first number:');
+
+%Read the remaining numbers.
+while x>0
+      prod = prod * x;
+      nvals = nvals +1;
+      x=input('Enter next number: ');
+end
+g=prod^(1/nvals);
+
+fprintf('The geomenticmean is %.4f\n',g);
+2.
+function[r,theta]= rect2polar(x,y)
+
+r=sqrt(x.^2+y.^2);
+theta=180/pi*atan2(y,x);
+
+end
